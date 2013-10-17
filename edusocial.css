@@ -1,0 +1,167 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  color: #89a;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+a {
+  color: #69c;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+#header {
+  position: relative;
+  z-index: 1;
+  height: 150px;
+  background: url("img/noise.png"), url("img/header.png");
+  background-size: auto, 100% 100%;
+  box-shadow: 0 0 50px 20px #fff;
+}
+
+#header-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page {
+  height: 100%;
+  background-image: url("img/noise.png"), url("img/background.png");
+  background-size: auto, 100%;
+  padding-top: 90px;
+  text-shadow: 0 1px #fff;
+}
+
+#greeting {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#login-area {
+  background: url("img/login-background.png") center 3px no-repeat;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#connect-social {
+  height: 100px;
+}
+
+#connect-buttons {
+  margin-top: 8px;
+}
+
+.connect-button {
+  display: inline-block;
+  width: 190px;
+  height: 55px;
+  margin: 8px;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.connect-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+#connect-facebook {
+  background: url("img/login-button-facebook.png") center no-repeat;
+}
+
+#connect-twitter {
+  background: url("img/login-button-twitter.png") center no-repeat;
+}
+
+#connect-email {
+  margin-top: 50px;
+}
+
+#country {
+  position: relative;
+  width: 570px;
+  height: 400px;
+  background: url("img/country.png") center no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#university-bubble {
+  position: absolute;
+  width: 440px;
+  height: 340px;
+  background: url("img/country-bubble.png") top left no-repeat;
+  padding-left: 105px;
+  padding-top: 95px;
+  font-family: Verdana, sans-serif;
+  color: #889;
+  transform: translate(-80px, -225px); /* offset transparent pixels */
+  -webkit-transform: translate(-80px, -225px);
+  -moz-transform: translate(-80px, -225px);
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+}
+
+#university-bubble.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#university-city {
+  padding-bottom: 6px;
+}
+
+#university-name {
+  padding-bottom: 10px;
+}
+
+#university-details {
+  overflow: auto;
+  max-width: 240px;
+  height: 85px;
+  font-size: 12px;
+}
+
+#university-link {
+  font-size: 11px;
+  margin-left: 115px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+}
